@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/atropos/atropos.min.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Gaming Platform</title>
+    <link rel="icon" type="image/x-icon" href="assets/spiderman.png" />
+  </head>
+  <body>
+    <nav class="flex mt-8 justify-between fixed top-0 z-50">
+      <div class="flex ms-12 logo-nav">
+        <h1
+          class="logo-text text-white text-3xl font-sans ms-8 cursor-pointer max-md:ms-2"
+        >
+          Game Platform
+        </h1>
+        <img
+          class="logo-gif w-20 ml-4 rounded-lg max-md:hidden cursor-pointer"
+          src="assets/AWfX.gif"
+        />
+      </div>
+
+      <ul class="flex fixed right-0 space-x-6 mr-12 max-lg:hidden">
+        <li><a class="text-white text-xl font-mono" href="#home">Home</a></li>
+        <li>
+          <a class="text-white text-xl font-mono" href="#popular-games"
+            >Games</a
+          >
+        </li>
+        <li>
+          <a class="text-white text-xl font-mono" href="#consoles">Consoles</a>
+        </li>
+        <li>
+          <a class="text-white text-xl font-mono" href="#about">About</a>
+        </li>
+        <li>
+          <a class="text-white text-xl font-mono" href="#footer">Contact Us</a>
+        </li>
+        <li>
+          <button
+            class="signup-button text-white rounded-lg py-2 px-2 font-semibold"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+      <div>
+        <img
+          src="assets/hamburger.svg"
+          class="lg:hidden max-lg:visible w-10 ms-28 hamburger-menu"
+        />
+        <ul
+          class="flex flex-col fixed right-0 pl-8 pr-4 mr-12 hamburger-list hidden ms-auto"
+        >
+          <li class="mb-2">
+            <a class="text-black text-xl font-mono" href="#home">Home</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-black text-xl font-mono" href="#popular-games"
+              >Games</a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="text-black text-xl font-mono" href="#consoles"
+              >Consoles</a
+            >
+          </li>
+          <li class="mb-2">
+            <a class="text-black text-xl font-mono" href="#about">About</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-black text-xl font-mono" href="#footer"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal-window hidden">
+      <div class="modal-header flex">
+        <h1 class="text-3xl text-white ms-16 font-bold">Sign Up</h1>
+        <img
+          class="w-4 ms-auto mr-8 cursor-pointer close-modal-button"
+          src="assets/close.svg"
+        />
+      </div>
+
+      <form class="signup-form ms-16 mt-8">
+        <p class="text-gray-300 text-sm">Enter Name</p>
+        <input
+          class="p-1 rounded-md mb-6 pr-60"
+          type="text"
+          placeholder="Full Name"
+        />
+        <p class="text-gray-300 text-sm">Enter Email</p>
+        <input
+          class="p-1 rounded-md mb-6 w-auto pr-60"
+          type="email"
+          placeholder="useremail@domain.com"
+        />
+        <p class="text-gray-300 text-sm">Password</p>
+        <input
+          class="p-1 rounded-md mb-6 w-auto pr-60"
+          type="password"
+          placeholder="Enter Password"
+        />
+        <br />
+
+        <button
+          class="submit-form-button text-white rounded-lg py-2 px-2 font-semibold"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div
+      id="home"
+      class="grid grid-cols-2 ms-16 mt-14 max-md:mt-6 mb-32 max-md:grid-cols-1"
+    >
+      <div class="main-section mt-24 max-md:mt-6">
+        <h1
+          class="text-6xl font-semibold text-white w-3/4 mt-28 ml-6 max-md:w-3/4 max-md:ml-2"
+        >
+          PLAY THE NEXT LEVEL OF GAMING
+        </h1>
+        <button
+          class="starting-button font-semibold text-white rounded-md p-4 mt-10 ml-6 max-md:ml-2"
+        >
+          GET STARTED
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="spiderman-image mt-24 max-md:mt-16 ml-12"
+          width="600px"
+          src="assets/spiderman.png"
+        />
+      </div>
+    </div>
+
+    <h1
+      class="font-semibold text-3xl text-white ml-14 mb-10 best-sellers mt-56"
+    >
+      Best Sellers
+    </h1>
+    <div class="atroposes max-md:hidden">
+      <div class="atropos my-atropos des-atropose">
+        <div class="atropos-scale">
+          <div class="atropos-rotate">
+            <div class="atropos-inner">
+              <img
+                class="rounded-xl"
+                src="https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg"
+              />
+              <div>
+                <p
+                  class="text-slate-100 text-over text-2xl max-md:hidden"
+                  data-atropos-offset="10"
+                >
+                  Resident <br />
+                  Evil 4
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="atropos my-second-atropos des-atropose">
+        <div class="atropos-scale">
+          <div class="atropos-rotate">
+            <div class="atropos-inner">
+              <img
+                class="rounded-xl"
+                src="https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg"
+              />
+              <div>
+                <p
+                  class="text-slate-100 text-over text-2xl max-md:hidden"
+                  data-atropos-offset="10"
+                >
+                  Hogwarts <br />
+                  Legacy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="atropos my-third-atropos des-atropose">
+        <div class="atropos-scale">
+          <div class="atropos-rotate">
+            <div class="atropos-inner">
+              <img
+                class="rounded-xl"
+                src="https://media.rawg.io/media/games/77d/77d51f8f4a07c3eecb0f8504027b1bf0.jpg"
+              />
+              <div>
+                <p
+                  class="text-slate-100 text-over text-2xl max-md:hidden"
+                  data-atropos-offset="10"
+                >
+                  Dead <br />
+                  Island 2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:hidden ms-8">
+      <img
+        class="rounded-xl mb-6"
+        src="https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg"
+      />
+      <img
+        class="rounded-xl mb-6"
+        src="https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg"
+      />
+      <img
+        class="rounded-xl mb-6"
+        src="https://media.rawg.io/media/games/77d/77d51f8f4a07c3eecb0f8504027b1bf0.jpg"
+      />
+    </div>
+
+    <section class="grid grid-cols-2 mt-48 max-md:grid-cols-1" id="about">
+      <img
+        class="w-[400px] max-md:w-[300px] ml-32 max-md:mx-auto aboutUs-image mt-24"
+        src="assets/raven.png"
+      />
+      <div
+        class="w-2/3 ml-6 mt-44 mb-24 max-md:mx-auto max-md:mt-12 aboutUs-description"
+      >
+        <h1 class="text-white text-4xl font-semibold">About Us</h1>
+        <p class="text-white text-xl mt-10 font-sans">
+          A great medium to promote a video game, create an online space that
+          unites gamers, or share industry news.
+        </p>
+        <button
+          class="learn-more font-semibold text-white rounded-lg p-4 mt-10"
+        >
+          Learn More &rarr;
+        </button>
+      </div>
+    </section>
+
+    <section class="mt-48 mb-64 console-logos" id="consoles">
+      <div class="flex justify-center space-x-16 max-md:space-x-8">
+        <img
+          title="Playstation"
+          class="w-14 cursor-pointer tab-option tab-option-1 active-console"
+          src="assets/playstation.svg"
+        />
+        <img
+          title="Xbox"
+          class="w-14 cursor-pointer tab-option tab-option-2"
+          src="assets/xbox.svg"
+        />
+        <img
+          title="Nintendo"
+          class="w-14 cursor-pointer tab-option tab-option-3"
+          src="assets/nintendo.svg"
+        />
+      </div>
+
+      <div
+        class="flex w-1/2 mx-auto mt-24 playstation tab-data tab-data-1 max-md:flex-col max-md:w-full"
+      >
+        <img class="w-60 max-md:mx-auto" src="assets/playstation5.png" />
+        <div class="ml-36 max-md:mx-auto max-md:ml-6 max-md:mt-6">
+          <h1 class="text-white text-2xl font-bold mb-6">
+            PLAYSTATION 5 CONSOLE
+          </h1>
+          <p class="text-gray-400 font-semibold mb-4">
+            The PS5 console unleashes new gaming possibilities that you never
+            anticipated. Experience lightning-fast loading with an
+            ultra-high-speed SSD, deeper immersion with support for haptic
+            feedback, adaptive triggers and 3D Audio, and an all-new generation
+            of incredible PlayStation games
+          </p>
+          <p class="text-white"></p>
+          <p class="text-gray-100 font-semibold mb-2">
+            <span class="line-through text-red-700 mr-2">$850</span> $800
+          </p>
+          <p class="text-green-600 font-semibold">Available</p>
+        </div>
+      </div>
+
+      <div
+        class="flex w-1/2 mx-auto mt-24 xbox tab-data tab-data-2 hidden max-md:flex-col max-md:w-full"
+      >
+        <img class="w-60 max-md:mx-auto" src="assets/xbox.png" />
+        <div class="ml-36 max-md:mx-auto max-md:ml-6">
+          <h1 class="text-white text-2xl font-bold mb-6">XBOX SERIES X</h1>
+          <p class="text-gray-400 font-semibold mb-4">
+            Introducing Xbox Series X, the fastest, most powerful Xbox ever.
+            Play thousands of titles from four generations of consoles—all games
+            look and play best on Xbox Series X. Experience next-gen speed and
+            performance with the Xbox Velocity Architecture, powered by a custom
+            SSD and integrated software.
+          </p>
+          <p class="text-white"></p>
+          <p class="text-gray-100 font-semibold mb-2">$700</p>
+          <p class="text-green-600 font-semibold">Available</p>
+        </div>
+      </div>
+
+      <div
+        class="flex w-1/2 mx-auto mt-24 nintendo tab-data tab-data-3 hidden max-md:flex-col max-md:w-full"
+      >
+        <img
+          class="w-60 max-md:mx-auto max-md:w-40"
+          src="assets/nintendo3.png"
+        />
+        <div class="ml-36 max-md:mx-auto max-md:ml-6">
+          <h1 class="text-white text-2xl font-bold mb-6">
+            NINTENDO SWITCH OLED
+          </h1>
+          <p class="text-gray-400 font-semibold mb-4">
+            Meet the newest member of the Nintendo Switch family The new system
+            features a vibrant 7-inch OLED screen, a wide adjustable stand, a
+            dock with a wired LAN port, 64 GB of internal storage, and enhanced
+            audio. Play anytime, anywhere, with anyone.
+          </p>
+          <p class="text-white"></p>
+          <p class="text-gray-100 font-semibold mb-2">$600</p>
+          <p class="text-red-700 font-semibold">Not Available</p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 mx-24 gap-8 mb-80 max-md:mx-8"
+    >
+      <div class="bg-[#328af11a] service-card rounded-lg">
+        <img class="w-8 mt-12 mb-6 mx-auto" src="assets/social.svg" />
+        <p class="text-white text-center text-3xl mb-4 font-bold">
+          Social Network
+        </p>
+        <p class="text-white text-center mb-12">
+          Build your gaming social network
+        </p>
+      </div>
+      <div class="bg-[#328af11a] service-card rounded-lg">
+        <img class="w-8 mt-12 mb-6 mx-auto" src="assets/24hrs.svg" />
+        <p class="text-white text-center text-3xl mb-4 font-bold">
+          Customer Support
+        </p>
+        <p class="text-white text-center mb-12">
+          Support is offered for you 24/7
+        </p>
+      </div>
+      <div class="bg-[#328af11a] service-card rounded-lg">
+        <img class="w-8 mt-12 mb-6 mx-auto" src="assets/security.svg" />
+        <p class="text-white text-center text-3xl mb-4 font-bold">
+          Social Network
+        </p>
+        <p class="text-white text-center mb-12">
+          Your information will always be secured with us
+        </p>
+      </div>
+    </div>
+
+    <h1
+      id="popular-games"
+      class="font-semibold text-3xl text-white ml-24 mb-12 popular-games mt-56"
+    >
+      Popular Games
+    </h1>
+    <div
+      class="game-cards grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-24 mx-24 max-md:mx-12 h-auto"
+    ></div>
+    <h1 class="text-white text-center text-3xl font-bold customer-title mt-64">
+      Hear from our customers
+    </h1>
+    <br />
+
+    <section class="slider mb-36">
+      <div class="slide flex-col max-md:ml-8">
+        <img class="w-36 rounded-full mb-6" src="assets/alexander-hipp.jpg" />
+        <p class="text-white text-3xl mb-4">Alexander Hipp</p>
+        <p class="text-white mb-2">
+          I had a very pleasant experience especially with the services provided
+        </p>
+        <p class="text-slate-400 mb-2">15/02/2023</p>
+        <div class="flex">
+          <p class="text-white">4.8</p>
+          <img class="w-4 ml-2" src="assets/star.svg" />
+        </div>
+      </div>
+
+      <div class="slide flex-col max-md:ml-8">
+        <img class="w-36 rounded-full mb-6" src="assets/alex-suprun.jpg" />
+        <p class="text-white text-3xl mb-4">Alex Suprun</p>
+        <p class="text-white mb-2 w-1/2 max-md:w-full">
+          Not only did they have the item I was looking for, but their selection
+          was vast, and the prices were competitive. The website was easy to
+          navigate, and the product descriptions were informative and accurate.
+        </p>
+        <p class="text-slate-400 mb-2">02/12/2022</p>
+        <div class="flex">
+          <p class="text-white">4.6</p>
+          <img class="w-4 ml-2" src="assets/star.svg" />
+        </div>
+      </div>
+
+      <div class="slide flex-col max-md:ml-8">
+        <img class="w-36 rounded-full mb-6" src="assets/nicolas-horn.jpg" />
+        <p class="text-white text-3xl mb-4">Nicolas Horn</p>
+        <p class="text-white mb-2 w-1/2 max-md:w-full">
+          Their website was user-friendly, making it easy to find the perfect
+          item. The checkout process was smooth, and I received my order
+          promptly.
+        </p>
+        <p class="text-slate-400 mb-2">25/07/2023</p>
+        <div class="flex">
+          <p class="text-white">4.7</p>
+          <img class="w-4 ml-2" src="assets/star.svg" />
+        </div>
+      </div>
+
+      <a class="text-center slider__btn slider__btn--left">&larr;</a>
+      <a class="text-center slider__btn slider__btn--right">&rarr;</a>
+    </section>
+
+    <div
+      id="footer"
+      class="grid grid-cols-4 max-md:grid-cols-2 bg-[#0a1928] max-md:bg-transparent"
+    >
+      <h1 class="logo-text text-white text-3xl font-sans mb-36 mt-16 ms-12">
+        Game Platform
+      </h1>
+      <div class="mt-16">
+        <h1 class="text-white text-2xl font-bold">Consoles</h1>
+        <br />
+        <ul>
+          <li class="text-white">
+            <a href="#">PLAYSTATION 5 CONSOLE</a>
+          </li>
+          <li class="text-white">
+            <a href="#">XBOX SERIES X</a>
+          </li>
+          <li class="text-white">
+            <a href="#">NINTENDO SWITCH OLED</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-16 max-md:mt-4 max-md:ms-14">
+        <h1 class="text-white text-2xl font-bold">Help</h1>
+        <br />
+        <ul>
+          <li class="text-white font-semibold"><a href="#">About Us</a></li>
+          <li class="text-white font-semibold"><a href="#">FAQs</a></li>
+          <li class="text-white font-semibold">
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li class="text-white font-semibold">
+            <a href="#">Payment Policy</a>
+          </li>
+        </ul>
+      </div>
+      <form class="mx-auto mt-16 mr-36 max-md:mt-4">
+        <h1 class="text-white text-2xl font-bold mb-4">Have Any Questions?</h1>
+        <p class="text-gray-500 text-xs">Message</p>
+        <textarea
+          id="OrderNotes"
+          class="mt-1 w-full rounded-lg border-gray-200 align-top shadow-sm sm:text-sm p-2"
+          rows="6"
+          placeholder="Enter any additional notes..."
+        ></textarea>
+        <br />
+        <br />
+        <button
+          class="submit-button text-white rounded-lg py-2 px-2 font-semibold"
+        >
+          Submit
+        </button>
+      </form>
+      <a
+        class="text-white scroll-top-btn cursor-pointer mb-8 ms-12 max-md:mt-8"
+      >
+        Scroll to Top &uarr;
+      </a>
+    </div>
+
+    <script src="node_modules/atropos/atropos.min.js"></script>
+    <script src="assets/scrollreveal.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
