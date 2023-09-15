@@ -1,4 +1,4 @@
-# Game-Platform
+# Game Platform Website
 A fully responsive gaming platform website that shows data about games that was fetched from RAWG Video Games Database API, displayed with interesting revealing on scroll animations and 3D parallax hover effects.
 
 ## API fetched to get data :
